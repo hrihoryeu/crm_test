@@ -4,4 +4,4 @@ from django.shortcuts import render, HttpResponse
 
 
 def first(request):
-    return HttpResponse('hello u r gay')
+    return HttpResponse('hello u r gay\nim not but u r')
