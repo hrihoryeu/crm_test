@@ -5,6 +5,7 @@ from rest_framework.mixins import ListModelMixin, CreateModelMixin, RetrieveMode
 
 from .models import Company, Employee
 from .serializers import CompanySerializer, EmployeeSerializer
+from .permissions import IsAdminOrViewOnly
 
 # Create your views here.
 
@@ -14,6 +15,8 @@ def first(request):
 
 
 class CompanyView(ListModelMixin, GenericViewSet, CreateModelMixin, RetrieveModelMixin, UpdateModelMixin):
+    permission_classes = [IsAdminOrViewOnly]
+
     queryset = Company.objects.all()
     serializer_class = CompanySerializer
 

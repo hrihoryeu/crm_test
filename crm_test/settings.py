@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'main',
     'django_countries',
     'rest_framework',
-    'rest_framework_simplejwt'
+    'rest_framework_simplejwt',
+    'djoser'
 ]
 
 MIDDLEWARE = [
@@ -138,7 +139,4 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
-    'DEFAULT_PERMISSION_CLASSES': [
-            'rest_framework.permissions.IsAdminUser',
-        ]
 }
