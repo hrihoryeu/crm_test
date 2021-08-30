@@ -3,4 +3,5 @@ psycopg2-binary
 django-countries
 djangorestframework
 djangorestframework-simplejwt
-djoser
+django_extensions
+django_filter
