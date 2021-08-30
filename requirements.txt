@@ -1,2 +1,7 @@
 Django
 psycopg2-binary
+django-countries
+djangorestframework
+djangorestframework-simplejwt
+django_extensions
+django_filter
