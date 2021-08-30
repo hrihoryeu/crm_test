@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'django_extensions',
     'django_filters',
+    'pytest',
+    'pytest_django',
 ]
 
 MIDDLEWARE = [
